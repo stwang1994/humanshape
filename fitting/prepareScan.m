@@ -44,7 +44,7 @@ for i = 1:length(scanFilenames)
     
     %% subsample scan
 %     nPointsSample = 16000;
-    nPointsSample = min(6449*3,size(pointsAllScan,1));
+    nPointsSample = min(6449,size(pointsAllScan,1));
     fprintf('nPointsSample: %d/%d\n',nPointsSample,size(pointsAllScan,1));
     
 %     if (i == 1)

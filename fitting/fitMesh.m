@@ -64,6 +64,8 @@ fprintf('nPCA: %d\n',p.nPCA);
 
 % read landmarks
 [scan,template] = readLandMarksAll(landmarksScanFilename,p.landmarksSM);
+% scan.landmarksIdxs = load(p.landmarksSM);
+% scan.landmarksIdxs = template.landmarksIdxs
 
 % prepare template
 load(p.facesSM,'faces');
